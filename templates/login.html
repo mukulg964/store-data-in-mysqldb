@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% block title %}
+    Login
+{% endblock title %}
+
+{% block link %}
+    <link rel="stylesheet" href="static\style\login.css">
+{% endblock link %}
+
+
+
+{% block body %}
+    <div class="login">
+        <form action="/login" method="POST">
+            <div>
+                <h1>Login</h1>
+            </div>
+            <div class="aa">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" placeholder="Your Username">
+            </div>
+            <div class="bb">
+                <label for="password" >Password</label><br>
+                <input type="password" name="password" placeholder="Your Password">
+            </div>
+            <div class="cc">
+                <button type="submit" style="width: 71px;height: 32px;color: chartreuse;background: dimgrey;">Login</button>
+            </div>
+        </form>
+    </div>
+{% endblock body %}
+

@@ -1,0 +1,47 @@
+{% extends 'main.html' %}
+
+{% block link %}
+<link rel="stylesheet" href="static/style/register.css">
+{% endblock link %}
+
+{% block title %}
+Register
+{% endblock title %}
+
+{% block body %}
+<main>
+    <div class="register">
+        <form action="/register" method="POST">
+            <div>
+                <h1>Register</h1>
+            </div>
+            <div class="aa">
+                <label for="username">Username</label><br>
+                <input type="text" name="username" placeholder="Your Username">
+            </div>
+            <div class="bb">
+                <label for="password" >Password</label><br>
+                <input type="password" name="password" placeholder="Your Password">
+            </div>
+             <div class="cc">
+                <label for="fname">First Name</label><br>
+                <input type="text" name="fname" placeholder="Your First Name">
+            </div>
+           <div class="dd">
+                <label for="fname">Last Name</label><br>
+                <input type="text" name="lname" placeholder="Your Last Name">
+            </div>
+            <div class="ee">
+                <label for="email">Email</label><br>
+               <input type="email" class="ff" name="email" placeholder="Your Email">
+            </div>
+            <div class="gg">
+                <button type="submit" style="width: 71px;height: 32px;color: chartreuse;background: dimgrey;">Register</button>
+                <button type="reset" class="hh" style="width: 71px;height: 32px;color: chartreuse;background: dimgrey;">Reset</button>
+            </div>
+
+            </form>
+    </div>
+</main>
+
+{% endblock body %}

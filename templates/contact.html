@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% block title %}
+contact
+{% endblock title %}
+{% block link %}
+<link rel="stylesheet" href="static\style\contact.css">
+{% endblock link %}
+
+
+{% block body %}
+
+<div class="contact">
+    <div>
+        <h1>Contact</h1>
+    </div>
+    <form action="/contact" method="POST">
+        <div class="bb">
+            <label for="name">Name</label><br>
+            <input type="text" name="name" placeholder="Your Name">
+        </div>
+        <div class="bb">
+            <label for="number">Contact</label><br>
+            <input type="number" name="contact" placeholder="Your Number">
+        </div>
+        <div class="bb">
+            <label for="messege">Messege</label><br>
+            <input type="text" name="messege" placeholder="Your Messege">
+        </div>
+        <div class="cc">
+            <button type="submit" style="width: 71px;height: 32px;color: chartreuse;background: dimgrey;">Submit</button>
+        </div>
+    </form>
+</div>
+{% endblock body %}
